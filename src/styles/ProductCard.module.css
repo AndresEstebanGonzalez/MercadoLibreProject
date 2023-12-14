@@ -1,0 +1,89 @@
+.cardContainer {
+  width: 17.75rem;
+  height: 38.75rem;
+  margin: 0 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+.cardContainer .itemLinkContainer {
+  text-decoration: none;
+}
+.cardContainer .itemLinkContainer .itemImageContainer {
+  width: 17.75rem;
+  border-radius: 0.25rem;
+}
+.cardContainer .itemLinkContainer .itemImageContainer .itemImage {
+  width: 17.75rem;
+  border-radius: 0.25rem;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer {
+  padding: 1.25rem;
+  background-color: #fff;
+  border-top: 0.063rem solid #f5f5f5;
+  border-radius: 0 0 0.25rem;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .dealOfTheDayBadgeContainer {
+  width: 15.25rem;
+  margin-bottom: 0.5rem;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .dealOfTheDayBadgeContainer .dealOfTheDayBadge {
+  padding: 0.125rem 0.25rem;
+  color: #fff;
+  background-color: #3483fa;
+  border-radius: 0.188rem;
+  font-size: 0.75rem;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .priceInformationContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .priceInformationContainer .priceAndDiscountContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .priceInformationContainer .priceAndDiscountContainer .priceWithoutDiscountContainer {
+  color: rgba(0, 0, 0, 0.5490196078);
+  font-size: 0.75rem;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .priceInformationContainer .priceAndDiscountContainer .priceWithoutDiscountContainer .currencySymbol {
+  padding-right: 0.2rem;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .priceInformationContainer .priceWithDiscountContainer {
+  color: #333;
+  font-size: 1.5rem;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .priceInformationContainer .priceWithDiscountContainer .currencySymbol {
+  padding-right: 0.2rem;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .priceInformationContainer .discountPercentage {
+  margin-left: 0.25rem;
+  padding: 0.938rem 0 0;
+  color: #00a650;
+  font-size: 0.875rem;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .productDescriptionP {
+  margin: 0.375rem 0 0;
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 100;
+  line-height: 1.3;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .productSeller {
+  margin: 0.125rem 0 0;
+  color: #8c8c8c;
+  font-size: 0.75rem;
+  font-weight: 100;
+  line-height: 1;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .envioGratisBadgeContainer {
+  margin-top: 0.625rem;
+}
+.cardContainer .itemLinkContainer .itemDescriptionContainer .envioGratisBadgeContainer .envioGratisBadge {
+  font-size: 0.875rem;
+  color: #00a650;
+  letter-spacing: 0.013rem;
+}/*# sourceMappingURL=ProductCard.module.css.map */

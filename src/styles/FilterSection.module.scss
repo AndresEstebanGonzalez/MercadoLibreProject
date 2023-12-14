@@ -1,0 +1,43 @@
+@import "../assets/variables/colors";
+@import "../assets/variables/mixins";
+
+.mainContainer {
+  width: 16.5rem;
+  height: 100dvh;
+  margin-right: 1.25rem;
+  .title {
+    margin: 0 0 0.625rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.15;
+  }
+  .p {
+    font-size: 0.875rem;
+    font-weight: 100;
+    line-height: 1.14;
+  }
+  .subtitle {
+    margin: 2rem 0 0.625rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+  .list {
+    list-style: none;
+    .listElementContainer {
+      .listElement {
+        margin: 0 0 0.813rem;
+        color: $primary-black;
+        font-size: 0.8rem;
+        font-weight: 100;
+        letter-spacing: 0.009rem;
+        line-height: 0.89;
+        text-decoration: none;
+        .quantity {
+          color: $secondary-grey;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

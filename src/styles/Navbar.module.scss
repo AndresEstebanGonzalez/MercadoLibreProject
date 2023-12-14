@@ -1,0 +1,240 @@
+@import "../assets/variables/colors";
+@import "../assets/variables/mixins";
+
+.navbarContainer {
+  @include flexboxCenter;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: $primary-yellow;
+  .navbarContentContainer {
+    @include flexboxCenter($justify: space-between, $direction: column);
+    width: 75rem;
+    height: 6.25rem;
+    margin: 0 15rem;
+    padding: 0.5rem 0.62rem 0.75rem 0.62rem;
+    .topInnerNavbarContainer {
+      @include flexboxCenter($justify: space-between);
+      column-gap: 1.5rem;
+      .navbarLogoContainer {
+        @include flexboxCenter($justify: flex-start);
+        width: 10rem;
+        height: 2.5rem;
+        .navbarLogoLink {
+          @include flexboxCenter($justify: flex-start);
+          width: 8.37rem;
+          .navbarLogoImage {
+            width: 8.37rem;
+          }
+        }
+      }
+      .searchbarContainer {
+        @include flexboxCenter($justify: flex-start);
+        width: 36.25rem;
+        height: 2.5rem;
+        background-color: $primary-white;
+        border-radius: 0.12rem;
+        box-shadow: 0 0.063rem 0.125rem 0 #00000033;
+        .searchbarForm {
+          @include flexboxCenter($justify: space-between);
+          position: relative;
+          width: 36.25rem;
+          height: 2.5rem;
+          padding: 0.62rem 3.75rem 0.62rem 0.9rem;
+          border-radius: 0.12rem;
+          .searchbarInput {
+            width: 31rem;
+            height: 1rem;
+            color: $primary-black;
+            border: none;
+            border-radius: 0.13rem;
+            outline: none;
+            font-size: 0.9rem;
+            font-weight: 200;
+          }
+          .searchButton {
+            position: absolute;
+            right: 0;
+            width: 2.8rem;
+            height: 2.5rem;
+            background-color: $primary-white;
+            border: none;
+            border-radius: 0.12rem;
+            .searchLogo {
+              height: 1rem;
+              color: $primary-grey03;
+            }
+          }
+          .searchButton::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.406rem;
+            height: 1.625rem;
+            border-left: 0.063rem $primary-grey03 solid;
+          }
+        }
+      }
+      .topRightContainer {
+        @include flexboxCenter($justify: flex-end);
+        width: 24.375rem;
+        .navbarStarPlusLink {
+          width: 21.25rem;
+          height: 2.5rem;
+          .navbarStarPlusImage {
+            width: 21.25rem;
+            height: 2.5rem;
+          }
+        }
+      }
+    }
+    .bottomInnerNavbarContainer {
+      column-gap: 1.5rem;
+      @include flexboxCenter($justify: space-between, $align: flex-end);
+      .deliveryLocationContainer {
+        position: relative;
+        width: 10.25rem;
+        height: 1.75rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        .deliveryLocationInformation {
+          @include flexboxCenter($align: flex-start, $direction: column);
+          width: 10.25rem;
+          height: 1.75rem;
+          margin: 0;
+          padding: 0;
+          padding-left: 1.5rem;
+          text-decoration: none;
+          .deliveryLocationName {
+            position: static;
+            color: #00000080;
+            font-size: 0.75rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: 0.75rem;
+            top: 0.063rem;
+          }
+          .deliveryLocationAddress {
+            max-width: 8.75rem;
+            color: $primary-black;
+            font-size: 0.875rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+      }
+      .deliveryLocationContainer::before {
+        position: absolute;
+        content: url("src/assets/images/locationDot.svg");
+        width: 1rem;
+        height: 1rem;
+        top: 0.125rem;
+        bottom: 0;
+      }
+      .deliveryLocationContainer:hover::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -0.375rem;
+        left: -0.5rem;
+        padding: 0.375rem 0.5rem 0.25rem 0.5rem;
+        border: 0.1rem #0000001a solid;
+        border-radius: 0.375rem;
+      }
+
+      .middleMenuContainer {
+        @include flexboxCenter($justify: flex-start, $align: flex-end);
+        width: 36.25rem;
+        height: 2.25rem;
+        margin: -0.25rem;
+        padding: 0.25rem;
+        .navbarMenuList {
+          @include flexboxCenter($justify: flex-start);
+          .navbarMenuItem {
+            @include flexboxCenter($justify: flex-start, $align: flex-end);
+            position: relative;
+            height: 1.75rem;
+            margin-right: 1rem;
+            list-style: none;
+            .navbarMenuItemA {
+              font-size: 0.8rem;
+              color: $primary-grey06;
+              line-height: 1.125rem;
+              text-decoration: none;
+            }
+            .navbarMenuItemA:hover {
+              color: $primary-grey09;
+            }
+          }
+          .navbarMenuItem:nth-of-type(1) {
+            padding-right: 0.875rem;
+          }
+          .navbarMenuItem:nth-child(1)::after {
+            content: url("src/assets/images/chevronDown.svg");
+            position: absolute;
+            width: 0.6rem;
+            right: 0.125rem;
+            top: 0.375rem;
+          }
+        }
+      }
+
+      .rightMenuContainer {
+        @include flexboxCenter($justify: flex-end, $align: flex-end);
+        width: 24.375rem;
+        height: 1.75rem;
+        .rightMenu {
+          @include flexboxCenter($justify: flex-end, $align: flex-end);
+          .item {
+            @include flexboxCenter($justify: flex-end, $align: flex-end);
+            position: relative;
+            color: $primary-black;
+            font-size: 0.8rem;
+            text-decoration: none;
+            .menuIcon {
+              height: 1.25rem;
+            }
+          }
+
+          .optionUser {
+            padding-right: 0.875rem;
+            .userIcon {
+              margin-right: 0.375rem;
+            }
+          }
+          .optionUser::after {
+            content: url("src/assets/images/chevronDown.svg");
+            position: absolute;
+            width: 0.6rem;
+            right: 0.125rem;
+            top: 0.15rem;
+          }
+
+          .optionCompras {
+            margin-left: 1.375rem;
+          }
+
+          .optionFavoritos {
+            margin-left: 1.375rem;
+            padding-right: 0.875rem;
+          }
+          .optionFavoritos::after {
+            content: url("src/assets/images/chevronDown.svg");
+            position: absolute;
+            width: 0.6rem;
+            right: 0.125rem;
+            top: 0.1rem;
+          }
+
+          .optionNotification {
+            margin: 0 1.375rem;
+          }
+        }
+      }
+    }
+  }
+}

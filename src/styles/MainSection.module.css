@@ -1,0 +1,20 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+.mainContainer .promotionSection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.mainContainer .promotionSection .productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 56.25rem;
+  overflow: auto;
+  text-align: left;
+}/*# sourceMappingURL=MainSection.module.css.map */

@@ -1,0 +1,38 @@
+.mainContainer {
+  width: 16.5rem;
+  height: 100dvh;
+  margin-right: 1.25rem;
+}
+.mainContainer .title {
+  margin: 0 0 0.625rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.15;
+}
+.mainContainer .p {
+  font-size: 0.875rem;
+  font-weight: 100;
+  line-height: 1.14;
+}
+.mainContainer .subtitle {
+  margin: 2rem 0 0.625rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.mainContainer .list {
+  list-style: none;
+}
+.mainContainer .list .listElementContainer .listElement {
+  margin: 0 0 0.813rem;
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 0.009rem;
+  line-height: 0.89;
+  text-decoration: none;
+}
+.mainContainer .list .listElementContainer .listElement .quantity {
+  color: #8c8c8c;
+  font-weight: 300;
+}/*# sourceMappingURL=FilterSection.module.css.map */

@@ -1,0 +1,139 @@
+.mainContianer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  height: 8.75rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+.mainContianer .contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: row;
+  width: 75.5rem;
+  height: 8.75rem;
+}
+.mainContianer .contentContainer .carouselTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 18.5rem;
+  height: 8.75rem;
+  margin-right: 2rem;
+  color: #333;
+}
+.mainContianer .contentContainer .carouselTitleContainer .headerTitle {
+  width: 100%;
+  height: 2.563rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.mainContianer .contentContainer .carouselTitleContainer .headerSubtitle {
+  width: 100%;
+  height: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.mainContianer .contentContainer .carouselSectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  width: 54.5rem;
+  height: 8.75rem;
+}
+.mainContianer .contentContainer .carouselSectionContainer .controlContainer {
+  position: absolute;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  border: none;
+  border-radius: 5rem;
+}
+.mainContianer .contentContainer .carouselSectionContainer .controlContainer .controlIconContainer {
+  width: 2rem;
+  height: 2rem;
+}
+.mainContianer .contentContainer .carouselSectionContainer .controlContainer .controlIconContainer .controlIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.mainContianer .contentContainer .carouselSectionContainer .controlContainer:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.mainContianer .contentContainer .carouselSectionContainer .left {
+  left: -1.5rem;
+  z-index: 1;
+}
+.mainContianer .contentContainer .carouselSectionContainer .right {
+  right: -1.5rem;
+  z-index: 1;
+}
+.mainContianer .contentContainer .carouselSectionContainer .carouselContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  width: 55.5rem;
+  height: 8.75rem;
+  overflow-x: hidden;
+  z-index: 2;
+}
+.mainContianer .contentContainer .carouselSectionContainer .carouselContainer .carouselAnimationContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  width: 55.5rem;
+  height: 8.75rem;
+  z-index: 2;
+  will-change: transform;
+  flex-direction: row;
+  transition: transform 250ms;
+}
+.mainContianer .contentContainer .carouselSectionContainer .carouselContainer .carouselAnimationContainer .carouselItemContainer {
+  width: 9.25rem;
+  height: 8.75rem;
+}
+.mainContianer .contentContainer .carouselSectionContainer .carouselContainer .carouselAnimationContainer .carouselItemContainer .carouselItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 9.25rem;
+  height: 8.75rem;
+  padding: 0 0.75rem;
+}
+.mainContianer .contentContainer .carouselSectionContainer .carouselContainer .carouselAnimationContainer .carouselItemContainer .carouselItem .carouselItemIcon {
+  width: 3rem;
+  margin-bottom: 0.75rem;
+}
+.mainContianer .contentContainer .carouselSectionContainer .carouselContainer .carouselAnimationContainer .carouselItemContainer .carouselItem .carouselItemTitle {
+  width: 6.25rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: #666;
+}
+.mainContianer .contentContainer .carouselSectionContainer .carouselContainer .carouselAnimationContainer .carouselItemContainer:hover .carouselItem .carouselItemTitle {
+  color: #3483fa;
+}
+.mainContianer .contentContainer .carouselSectionContainer .carouselContainer .carouselAnimationContainer .selected .carouselItem .carouselItemTitle {
+  color: #333;
+  font-weight: 600;
+}
+.mainContianer .contentContainer .carouselSectionContainer .carouselContainer .carouselAnimationContainer .selected::after {
+  content: "";
+  position: absolute;
+  width: 9.25rem;
+  bottom: 0;
+  border-bottom: 0.25rem solid #3483fa;
+  border-radius: 0.25rem 0.25rem 0 0;
+}/*# sourceMappingURL=FilterHeader.module.css.map */

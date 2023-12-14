@@ -1,0 +1,281 @@
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: #fff159;
+}
+.navbarContainer .navbarContentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 75rem;
+  height: 6.25rem;
+  margin: 0 15rem;
+  padding: 0.5rem 0.62rem 0.75rem 0.62rem;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .navbarLogoContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 10rem;
+  height: 2.5rem;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .navbarLogoContainer .navbarLogoLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 8.37rem;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .navbarLogoContainer .navbarLogoLink .navbarLogoImage {
+  width: 8.37rem;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .searchbarContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 36.25rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border-radius: 0.12rem;
+  box-shadow: 0 0.063rem 0.125rem 0 rgba(0, 0, 0, 0.2);
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .searchbarContainer .searchbarForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  width: 36.25rem;
+  height: 2.5rem;
+  padding: 0.62rem 3.75rem 0.62rem 0.9rem;
+  border-radius: 0.12rem;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .searchbarContainer .searchbarForm .searchbarInput {
+  width: 31rem;
+  height: 1rem;
+  color: #333;
+  border: none;
+  border-radius: 0.13rem;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .searchbarContainer .searchbarForm .searchButton {
+  position: absolute;
+  right: 0;
+  width: 2.8rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.12rem;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .searchbarContainer .searchbarForm .searchButton .searchLogo {
+  height: 1rem;
+  color: #e6e6e6;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .searchbarContainer .searchbarForm .searchButton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.406rem;
+  height: 1.625rem;
+  border-left: 0.063rem #e6e6e6 solid;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .topRightContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: 24.375rem;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .topRightContainer .navbarStarPlusLink {
+  width: 21.25rem;
+  height: 2.5rem;
+}
+.navbarContainer .navbarContentContainer .topInnerNavbarContainer .topRightContainer .navbarStarPlusLink .navbarStarPlusImage {
+  width: 21.25rem;
+  height: 2.5rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .deliveryLocationContainer {
+  position: relative;
+  width: 10.25rem;
+  height: 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .deliveryLocationContainer .deliveryLocationInformation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 10.25rem;
+  height: 1.75rem;
+  margin: 0;
+  padding: 0;
+  padding-left: 1.5rem;
+  text-decoration: none;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .deliveryLocationContainer .deliveryLocationInformation .deliveryLocationName {
+  position: static;
+  color: rgba(0, 0, 0, 0.5019607843);
+  font-size: 0.75rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 0.75rem;
+  top: 0.063rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .deliveryLocationContainer .deliveryLocationInformation .deliveryLocationAddress {
+  max-width: 8.75rem;
+  color: #333;
+  font-size: 0.875rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .deliveryLocationContainer::before {
+  position: absolute;
+  content: url("src/assets/images/locationDot.svg");
+  width: 1rem;
+  height: 1rem;
+  top: 0.125rem;
+  bottom: 0;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .deliveryLocationContainer:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -0.375rem;
+  left: -0.5rem;
+  padding: 0.375rem 0.5rem 0.25rem 0.5rem;
+  border: 0.1rem rgba(0, 0, 0, 0.1019607843) solid;
+  border-radius: 0.375rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .middleMenuContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 36.25rem;
+  height: 2.25rem;
+  margin: -0.25rem;
+  padding: 0.25rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .middleMenuContainer .navbarMenuList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .middleMenuContainer .navbarMenuList .navbarMenuItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+  position: relative;
+  height: 1.75rem;
+  margin-right: 1rem;
+  list-style: none;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .middleMenuContainer .navbarMenuList .navbarMenuItem .navbarMenuItemA {
+  font-size: 0.8rem;
+  color: rgba(51, 51, 51, 0.6);
+  line-height: 1.125rem;
+  text-decoration: none;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .middleMenuContainer .navbarMenuList .navbarMenuItem .navbarMenuItemA:hover {
+  color: rgba(51, 51, 51, 0.9019607843);
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .middleMenuContainer .navbarMenuList .navbarMenuItem:nth-of-type(1) {
+  padding-right: 0.875rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .middleMenuContainer .navbarMenuList .navbarMenuItem:nth-child(1)::after {
+  content: url("src/assets/images/chevronDown.svg");
+  position: absolute;
+  width: 0.6rem;
+  right: 0.125rem;
+  top: 0.375rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 24.375rem;
+  height: 1.75rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer .rightMenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer .rightMenu .item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  position: relative;
+  color: #333;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer .rightMenu .item .menuIcon {
+  height: 1.25rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer .rightMenu .optionUser {
+  padding-right: 0.875rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer .rightMenu .optionUser .userIcon {
+  margin-right: 0.375rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer .rightMenu .optionUser::after {
+  content: url("src/assets/images/chevronDown.svg");
+  position: absolute;
+  width: 0.6rem;
+  right: 0.125rem;
+  top: 0.15rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer .rightMenu .optionCompras {
+  margin-left: 1.375rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer .rightMenu .optionFavoritos {
+  margin-left: 1.375rem;
+  padding-right: 0.875rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer .rightMenu .optionFavoritos::after {
+  content: url("src/assets/images/chevronDown.svg");
+  position: absolute;
+  width: 0.6rem;
+  right: 0.125rem;
+  top: 0.1rem;
+}
+.navbarContainer .navbarContentContainer .bottomInnerNavbarContainer .rightMenuContainer .rightMenu .optionNotification {
+  margin: 0 1.375rem;
+}/*# sourceMappingURL=Navbar.module.css.map */

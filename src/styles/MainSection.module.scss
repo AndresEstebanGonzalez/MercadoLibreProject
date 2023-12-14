@@ -1,0 +1,17 @@
+@import "../assets/variables/colors";
+@import "../assets/variables/mixins";
+
+.mainContainer {
+  @include flexboxCenter($direction: column);
+  width: 100vw;
+  .promotionSection {
+    @include flexboxCenter($align: flex-start);
+    .productContainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 56.25rem;
+      overflow: auto;
+      text-align: left;
+    }
+  }
+}
